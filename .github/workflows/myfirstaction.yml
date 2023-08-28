@@ -7,7 +7,6 @@ jobs:
     steps:
       - name: Print "Name"
         run: echo "Hello ${{ vars.MY_NAME }}"
-      - name: Print Surname
   surname:
     needs: myfirstjob
     runs-on: ubuntu-latest
