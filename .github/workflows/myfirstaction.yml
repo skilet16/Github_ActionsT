@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: test
     steps:
-      - name: Print "Greetings"
+      - name: Print "Name"
         run: echo "Hello ${{ vars.MY_NAME }}"
-      - name: Print Congratz
-        run: echo "From Accenture"
+      - name: Print Surname
+        run: echo "Surname ${{ secrets.MY_SURNAME }}"
