@@ -3,8 +3,9 @@ on: workflow_dispatch
 jobs:
   myfirstjob:
     runs-on: ubuntu-latest
+    environment: test
     steps:
       - name: Print "Greetings"
-        run: echo "Hello students"
+        run: echo "Hello ${{ vars.MY_NAME }}"
       - name: Print Congratz
         run: echo "From Accenture"
